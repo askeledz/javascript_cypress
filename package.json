@@ -1,0 +1,31 @@
+{
+	"name": "bootcamp-cypress",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"cy:open": "cypress open",
+		"cy:run": "cypress run",
+		"cy:run:chrome": "cypress run --browser chrome",
+		"cy:run:firefox": "cypress run --browser firefox",
+		"cy:run:electron": "cypress run --browser electron",
+		"cy:update-snapshots": "cypress run --env updateSnapshots=true",
+		"cy:run-test-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
+		"cy:run-test-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
+		"cy:percy": "percy exec -- cypress run"
+	},
+	"author": "Andrej Skeledzija",
+	"license": "ISC",
+	"dependencies": {
+		"@percy/cypress": "^2.3.1",
+		"cypress": "^4.1.0",
+		"cypress-cucumber-preprocessor": "^2.0.1",
+		"cypress-image-snapshot": "^3.1.1",
+		"cypress-xpath": "^1.4.0",
+		"prettier": "^1.19.1"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": true
+	}
+}

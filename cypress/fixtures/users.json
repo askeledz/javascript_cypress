@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"app": "fabric",
+		"username": "askeledzija@rchsd.org",
+		"password": "January2020"
+	},
+	{
+		"id": 2,
+		"app": "portal",
+		"username": "askeledzija",
+		"password": "rady123"
+	},
+	{
+		"id": 3,
+		"app": "app3",
+		"username": "thirdUser",
+		"password": "thirdpass"
+	}
+]
