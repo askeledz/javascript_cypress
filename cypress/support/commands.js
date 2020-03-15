@@ -31,26 +31,3 @@ Cypress.Commands.add('setResolution', size => {
 		cy.viewport(size)
 	}
 })
-
-Cypress.Commands.add('fabricLogin', (username, password) => {
-	cy.clearCookies()
-	cy.clearLocalStorage()
-	cy.get('#textfield-Email').type(username)
-	cy.get('#textfield-Password').type(password)
-	cy.get('.login-form__button').click()
-})
-
-Cypress.Commands.add('fabricLogout', () => {
-	cy.get('.user-actions-menu').click()
-	cy.get('a')
-		.contains('Sign Out')
-		.click()
-})
-
-Cypress.Commands.add('pilotLogin', (username, password) => {
-	cy.clearCookies()
-	cy.clearLocalStorage()
-	cy.get('#username').type(username)
-	cy.get('#password').type(password)
-	cy.get('#submit-btn').click()
-})
