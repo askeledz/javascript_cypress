@@ -1,6 +1,9 @@
 {
 	"baseAPIURL": "https://pokeapi.co/api/v2/pokemon",
 	"baseAPIURL2": "http://server099:8080",
+	"url.api.com": "https://api.com",
+	"auth.api.com": "Basic NFBJUU9WQUdaQVdLNjhWNlpGQUE6OVBUUFJGMlE2WlJENzUzVVM2RklIWUtXRjRZWlRBM1JIVVlOMFdGQw==",
+	"reportID": 1234,
 	"watchForFileChanges": false,
 	"viewportWidth": 1000,
 	"viewportHeight": 660,
