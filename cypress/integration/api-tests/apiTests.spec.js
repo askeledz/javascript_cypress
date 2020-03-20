@@ -1,5 +1,3 @@
-// import { baseAPIPortalFabricDEV } from '../../../cypress'
-
 let urlAPI = Cypress.config('url.api.com')
 let authAPI = Cypress.config('auth.api.com')
 
