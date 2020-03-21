@@ -3,7 +3,7 @@ let authAPI = Cypress.config('auth.api.com')
 
 describe('API Testing - Report', () => {
 	it('POST /endpoint', () => {
-		cy.fixture('genome-solo-custom').then(body => {
+		cy.fixture('JSON-Example').then(body => {
 			cy.request({
 				method: 'POST',
 				url: `${urlAPI}/endpoint`,
