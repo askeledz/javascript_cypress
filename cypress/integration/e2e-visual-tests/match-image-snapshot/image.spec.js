@@ -14,7 +14,10 @@ describe('Visual regression testing', () => {
 
 				cy.setResolution(size)
 				cy.visit(page)
-				cy.matchImageSnapshot()
+				cy.matchImageSnapshot({
+					failureThreshold: 10.0, // overide support/commands parameters
+					failureThresholdType: 'percent', // overide support/commands parameters
+				})
 			})
 		})
 	})
@@ -24,8 +27,8 @@ describe('Single element snapshot', () => {
 	it('should match single elemnt', () => {
 		cy.visit('http://example.com/')
 		cy.get('h1').matchImageSnapshot({
-			failureThreshold: 10.0, // overide support/commands parameters
-			failureThresholdType: 'pixels', // overide support/commands parameters
+			failureThreshold: 100.0, // overide support/commands parameters
+			failureThresholdType: 'pixel', // overide support/commands parameters
 		})
 	})
 })
