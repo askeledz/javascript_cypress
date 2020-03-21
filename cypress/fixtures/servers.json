@@ -1,5 +1,5 @@
 {
 	"hostname": "dev-server",
-	"url": "http://gnmdapv004:5105",
-	"Authorization": "http://rerver:8080"
+	"url": "http://gserver004:5105",
+	"Authorization": "http://server:8080"
 }
